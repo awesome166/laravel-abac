@@ -1,5 +1,5 @@
 {
-    "name": "joey/abac",
+    "name": "awesome166/abac",
     "description": "ABAC (Attribute-Based Access Control) plugin for Laravel",
     "type": "library",
     "license": "MIT",
