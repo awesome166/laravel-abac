@@ -20,7 +20,7 @@ A robust ABAC implementation for Laravel providing attribute-based permission ma
 
 Install via Composer:
 ```bash
-composer require joey/abac
+composer require awesome166/abac:^1.0
 ```
 
 Run the install command:

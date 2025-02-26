@@ -7,21 +7,30 @@ namespace Composer\Autoload;
 class ComposerStaticInit82dec08673d51c3c8380d9e4f8dd9a45
 {
     public static $prefixLengthsPsr4 = array (
-        'V' => 
+        'J' => 
         array (
-            'Vendor\\AbacPlugin\\' => 18,
+            'Joey\\Abac\\' => 10,
+        ),
+        'A' => 
+        array (
+            'App\\Models\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Vendor\\AbacPlugin\\' => 
+        'Joey\\Abac\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'App\\Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/Models',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Database\\Seeders\\AbacDatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/AbacDatabaseSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

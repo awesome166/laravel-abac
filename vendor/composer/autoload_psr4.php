@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Vendor\\AbacPlugin\\' => array($baseDir . '/src'),
+    'Joey\\Abac\\' => array($baseDir . '/src'),
+    'App\\Models\\' => array($baseDir . '/app/Models'),
 );
