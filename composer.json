@@ -1,0 +1,39 @@
+{
+    "name": "joey/abac",
+    "description": "ABAC (Attribute-Based Access Control) plugin for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alfred Mantey",
+            "email": "webdevkeys@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/awesome166/abac-laravel.git"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Joey\\Abac\\": "src/",
+            "App\\Models\\": "app/Models/"
+        },
+        "classmap": [
+            "database/seeders"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Joey\\Abac\\Providers\\ABACServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.0.0"
+}
+
