@@ -1,5 +1,6 @@
 {
     "name": "awesome166/abac",
+    "version": "2.0.0",
     "description": "ABAC (Attribute-Based Access Control) plugin for Laravel",
     "type": "library",
     "license": "MIT",
