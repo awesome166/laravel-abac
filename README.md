@@ -17,16 +17,26 @@ A robust ABAC implementation for Laravel providing attribute-based permission ma
 - Database supporting JSON columns
 
 ## Installation
-
-Install via Composer:
-```bash
-composer require awesome166/abac:^1.0
-```
+1. Run `composer require awesome166/abac`.
+2. Publish config: `php artisan vendor:publish --tag="config"`.
+3. Migrate: `php artisan migrate`.
 
 Run the install command:
 ```bash
 php artisan abac:install
 ```
+
+
+
+
+# Publish everything
+php artisan vendor:publish --provider="awesome166\abac\ABACServiceProvider" --tag="config,models,migrations,controllers,middleware,commands"
+
+# Publish individual components
+php artisan vendor:publish --tag="config"     # Config
+php artisan vendor:publish --tag="models"     # Models
+php artisan vendor:publish --tag="migrations" # Migrations
+php artisan vendor:publish --tag="controllers" # Migrations
 
 ## Configuration
 
@@ -43,14 +53,16 @@ return [
   'account_status_check' => true, // Enable account active status check
 ];
 ```
-
+## Using Traits
+- **Default**: Use `awesome166\abac\Traits\HasPermissions` directly in your models.
+- **Customization**: Publish the trait with `php artisan vendor:publish --tag=traits` and update the namespace.
 ## Model Setup
 
 Add the `HasPermissions` trait to your User model:
 
 ```php
 // use App\Traits\HasPermissions;
-use joey\abac\Traits\HasPermissions;
+use awesome166\abac\Traits\HasPermissions;
 
 class User extends Authenticatable
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace joey\abac\Middleware;
+namespace awesome166\abac\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

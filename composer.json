@@ -18,7 +18,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Joey\\Abac\\": "src/",
+            "awesome166\\Abac\\": "src/",
             "App\\Models\\": "app/Models/"
         },
         "classmap": [
@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Joey\\Abac\\Providers\\ABACServiceProvider"
+                "awesome166\\Abac\\Providers\\ABACServiceProvider"
             ]
         }
     },

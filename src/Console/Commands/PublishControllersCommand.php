@@ -1,6 +1,6 @@
 <?php
 
-namespace joey\abac\Console\Commands;
+namespace awesome166\abac\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -20,7 +20,7 @@ class PublishControllersCommand extends Command
 
     public function handle()
     {
-        $sourcePath = base_path('vendor/joey/abac/src/Controllers');
+        $sourcePath = base_path('vendor/awesome166/abac/src/Controllers');
         $destination = app_path('Http/Controllers');
 
         $this->info("Moving files from {$sourcePath} to {$destination}");

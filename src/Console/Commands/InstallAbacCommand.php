@@ -1,6 +1,6 @@
 <?php
 
-namespace joey\abac\Console\Commands;
+namespace awesome166\abac\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
@@ -31,6 +31,8 @@ class InstallAbacCommand extends Command
         $this->call('abac:publish-models');
         $this->call('abac:publish-routes');
         $this->info('ABAC package installed successfully.');
+
+
 
 
     }

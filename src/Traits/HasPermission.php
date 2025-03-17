@@ -1,16 +1,16 @@
 <?php
 
-namespace joey\abac\Traits;
+namespace awesome166\abac\Traits;
 
 use App\Models\UserAccount;
 use Illuminate\Support\Facades\Cache;
-use joey\abac\Models\AssignedPermission;
-use joey\abac\Models\Account;
-use joey\abac\Models\Role;
-use joey\abac\Models\UserRole;
+use awesome166\abac\Models\AssignedPermission;
+use awesome166\abac\Models\Account;
+use awesome166\abac\Models\Role;
+use awesome166\abac\Models\UserRole;
 
 // app/Traits/HasPermissions.php
-trait HasPermissions
+trait HasPermission
 {
     /**
      * Get the account that the user belongs to.

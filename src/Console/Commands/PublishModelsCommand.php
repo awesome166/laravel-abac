@@ -1,6 +1,6 @@
 <?php
 
-namespace joey\abac\Console\Commands;
+namespace awesome166\abac\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -25,7 +25,7 @@ class PublishModelsCommand extends Command
             'UserRole'
         ];
 
-        $sourcePath = base_path('vendor/joey/abac/src/Models');
+        $sourcePath = base_path('vendor/awesome166/abac/src/Models');
         $destinationPath = app_path('Models');
 
         $filesystem->ensureDirectoryExists($destinationPath, 0755, true, true);
@@ -43,21 +43,21 @@ class PublishModelsCommand extends Command
 
             // Convert namespace
             $content = preg_replace(
-                '/namespace\s+joey\\\\abac\\\\Models;/',
+                '/namespace\s+awesome166\\\\abac\\\\Models;/',
                 'namespace App\Models;',
                 $content
             );
 
             // Convert model references in the code
             $content = str_replace(
-                'joey\\abac\\Models\\',
+                'awesome166\\abac\\Models\\',
                 'App\\Models\\',
                 $content
             );
 
             // Convert class PHPDoc annotations
             $content = str_replace(
-                '* @see joey\\\abac\\\Models\\',
+                '* @see awesome166\\\abac\\\Models\\',
                 '* @see App\\\Models\\',
                 $content
             );
@@ -79,7 +79,7 @@ class PublishModelsCommand extends Command
             // Inject the use statement at the beginning of the class definition
             $content = preg_replace(
                 '/class User extends Authenticatable/',
-                'use App\Traits\HasPermissions;' . PHP_EOL . 'class User extends Authenticatable',
+                'use App\Traits\HasPermission;' . PHP_EOL . 'class User extends Authenticatable',
                 $content,
                 1
             );

@@ -1,6 +1,6 @@
 <?php
 
-namespace joey\abac\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

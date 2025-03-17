@@ -1,6 +1,6 @@
 <?php
 
-namespace joey\abac\Console\Commands;
+namespace awesome166\abac\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

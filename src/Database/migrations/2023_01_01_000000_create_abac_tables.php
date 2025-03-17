@@ -15,6 +15,17 @@ class CreateAbacTables extends Migration
             $table->timestamps();
         });
 
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('phone')->unique();
+            $table->string('score')->nullable();
+            $table->string('credit_class')->nullable();
+            $table->timestamp('kyc_verified')->nullable();
+
+        });
+
+
+
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->string('name', 60);
