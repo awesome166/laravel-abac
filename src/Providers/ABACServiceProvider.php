@@ -63,11 +63,8 @@ class ABACServiceProvider extends ServiceProvider
         //     __DIR__.'/../../database/seeders/AbacDatabaseSeeder.php' => database_path('seeders/AbacDatabaseSeeder.php'),
         // ], 'abac-seeders');
 
-        // $this->publishes([
-        //     __DIR__.'/../../Models' => app_path('Models'),
-        // ], 'abac-models');
 
-        // $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+
 
         if ($this->app->runningInConsole()) {
             $this->commands([
