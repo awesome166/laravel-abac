@@ -24,7 +24,7 @@ class AbacDatabaseSeeder extends Seeder
         // Create Roles
         $roles = [
             ['id' => 1, 'name' => 'Super', 'description' => 'Super roles', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 2, 'name' => 'User', 'description' => 'User roles', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 2, 'name' => 'Customer', 'description' => 'User roles', 'created_at' => now(), 'updated_at' => now()],
             ['id' => 3, 'name' => 'Agent', 'description' => 'Agent role', 'created_at' => now(), 'updated_at' => now()],
         ];
         DB::table('roles')->upsert($roles, ['id'], ['name', 'description', 'updated_at']);

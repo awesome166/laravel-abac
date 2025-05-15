@@ -1,7 +1,7 @@
 {
     "name": "awesome166/abac",
-    "version": "v2.1.4",
-    "description": "ABAC (Attribute-Based Access Control) plugin for Laravel",
+    "version": "v2.1.5",
+    "description": "ABAC (Attribute-Based Access Control plugin for Laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -23,7 +23,8 @@
             "App\\Models\\": "app/Models/"
         },
         "classmap": [
-
+            "src/database/migrations/",
+            "src/database/seeders/"
         ]
     },
     "extra": {
