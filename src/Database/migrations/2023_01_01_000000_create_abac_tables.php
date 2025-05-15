@@ -77,7 +77,7 @@ class CreateAbacTables extends Migration
             $table->string('description', 120)->nullable();
             $table->enum('type', ['on-off', 'read-write', 'crud']);
             $table->json('account_type')->nullable();
-            $table->foreign('category_id')->references('id')->on('permission_categories')->onDelete('cascade');
+            $table->foreign('permission_category_id')->references('id')->on('permission_categories')->onDelete('cascade');
             $table->timestamps();
         });
 
