@@ -1,6 +1,6 @@
 {
     "name": "awesome166/abac",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "ABAC (Attribute-Based Access Control) plugin for Laravel",
     "type": "library",
     "license": "MIT",
@@ -34,6 +34,6 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": true
 }
 
