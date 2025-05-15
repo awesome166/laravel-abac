@@ -19,12 +19,7 @@ class ABACServiceProvider extends ServiceProvider
     {
 
         // Auto-load migrations (no publishing required)
-        $this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
-
-        // Publish config
-        // $this->publishes([
-        //     __DIR__ . '/Config/package.php' => config_path('your-package.php'),
-        // ], 'config');
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
 
         // Publish models
         $this->publishes([
@@ -33,7 +28,7 @@ class ABACServiceProvider extends ServiceProvider
 
         // Publish migrations (optional, if users need to modify them)
         $this->publishes([
-            __DIR__ . '/Database/Migrations' => database_path('migrations'),
+            __DIR__ . '/database/migrations' => database_path('migrations'),
         ], 'migrations');
 
         // Publish controllers
