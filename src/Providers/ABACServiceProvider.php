@@ -51,6 +51,9 @@ class ABACServiceProvider extends ServiceProvider
             __DIR__ . '/Console/Commands' => app_path('Console/Commands'),
         ], 'commands');
 
+        $this->publishes([
+            __DIR__ . '/../Config/abac.php' => config_path('abac.php'),
+        ], 'config');
 
         Relation::morphMap([
             'user' => config('abac.user_model', App\Models\User::class),
@@ -87,9 +90,9 @@ class ABACServiceProvider extends ServiceProvider
 
 
         // Merge config
-        $this->mergeConfigFrom(
-        __DIR__ . '/Config/abac.php', 'abac'
-        );
+        // $this->mergeConfigFrom(
+        //     __DIR__ . '/config/abac.php', 'abac'
+        // );
 
         // Register middleware (optional)
         $this->app['router']->aliasMiddleware(
