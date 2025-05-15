@@ -21,11 +21,8 @@
         "psr-4": {
             "awesome166\\Abac\\": "src/",
             "App\\Models\\": "app/Models/"
-        },
-        "classmap": [
-            "src/database/migrations/",
-            "src/database/seeders/"
-        ]
+        }
+
     },
     "extra": {
         "laravel": {

@@ -22,9 +22,9 @@ class ABACServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
 
         // Publish config
-        $this->publishes([
-            __DIR__ . '/Config/package.php' => config_path('your-package.php'),
-        ], 'config');
+        // $this->publishes([
+        //     __DIR__ . '/Config/package.php' => config_path('your-package.php'),
+        // ], 'config');
 
         // Publish models
         $this->publishes([
