@@ -1,6 +1,6 @@
 {
     "name": "awesome166/abac",
-    "version": "2.1.3",
+    "version": "v2.1.3",
     "description": "ABAC (Attribute-Based Access Control) plugin for Laravel",
     "type": "library",
     "license": "MIT",
@@ -23,7 +23,7 @@
             "App\\Models\\": "app/Models/"
         },
         "classmap": [
-            "src/database/seeders"
+
         ]
     },
     "extra": {
