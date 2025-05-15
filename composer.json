@@ -23,7 +23,7 @@
             "App\\Models\\": "app/Models/"
         },
         "classmap": [
-            "database/seeders"
+            "src/database/seeders"
         ]
     },
     "extra": {

@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'Database\\Seeders\\AbacDatabaseSeeder' => $baseDir . '/database/seeders/AbacDatabaseSeeder.php',
+    'Database\\Seeders\\AbacDatabaseSeeder' => $baseDir . '/src/database/seeders/AbacDatabaseSeeder.php',
 );

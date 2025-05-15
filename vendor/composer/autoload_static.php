@@ -7,9 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInit82dec08673d51c3c8380d9e4f8dd9a45
 {
     public static $prefixLengthsPsr4 = array (
-        'J' => 
+        'a' => 
         array (
-            'Joey\\Abac\\' => 10,
+            'awesome166\\Abac\\' => 16,
         ),
         'A' => 
         array (
@@ -18,7 +18,7 @@ class ComposerStaticInit82dec08673d51c3c8380d9e4f8dd9a45
     );
 
     public static $prefixDirsPsr4 = array (
-        'Joey\\Abac\\' => 
+        'awesome166\\Abac\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -30,7 +30,7 @@ class ComposerStaticInit82dec08673d51c3c8380d9e4f8dd9a45
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Database\\Seeders\\AbacDatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/AbacDatabaseSeeder.php',
+        'Database\\Seeders\\AbacDatabaseSeeder' => __DIR__ . '/../..' . '/src/database/seeders/AbacDatabaseSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
